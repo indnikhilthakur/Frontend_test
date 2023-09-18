@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/experiments/fom_task/formTask.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> -->
+        <title>Nikhil Thakur web</title>
+    </head>
+    <body>
+        
+        <h2>Example 1:</h2>
+        <form   id="first_form" method="get" action="/experiments/validateForm/result.html">
+            <!-- <id="first_form" action="/experiments/validateForm/result.html"> -->
+            <div>
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="Full_name" placeholder="Enter Full Name.." ></input>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email"></input>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="text" id="password" name="password" placeholder="Enter password"></input>
+            </div>
+            <div>
+                <label for="conferm_password">Conferm Password:</label>
+                <input type="password" id="conferm_password" name="conferm_password" placeholder="Conferm Password"></input>
+            </div>
+            <!-- <div class="formElement" id="gender">
+                <label>Gender:</label>
+                <span><input type="radio" name="gender" value="M" >Male</span>
+                 <span><input type="radio" name="gender" value="F">Female</span>
+                 <span><input type="radio" name="gender" value="O">Other</span>
+                
+            </div>
+            <div>
+                <label>Phone:</label>
+                <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            </div>
+            
+            <div class="formElement">
+                <label>Current city:</label>
+                <select class="city" id="city">
+                    <optgroup id="maharastra" label="Maharastra">
+                        <option>Pune</option>
+                        <option>sindhudurg</option>
+                        <option>Mumbai</option>
+                    </optgroup>
+                    <optgroup label="Up" disabled>
+                        <option>Lucknow</option>
+                    </optgroup>
+            
+                </select>
+            </div>
+            <div class="formElement">
+                Date of Birth:<br>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="formElement">
+                reset:<br>
+                <input type="reset" name="reset">
+            </div>
+            <div class="formElement">
+                upload photo:<br>
+                <input type="file" name="file" id="file">
+            </div>
+            
+            <div class="formElement">
+                <input type="checkbox" name="terms-conditions">I agree all terms and conditions.
+            </div> -->
+            
+            <div>
+                <input type="submit" value="Submit" >
+            </div>
+        </form>
+        <div id="demo">text</div>
+        
+        <!-- <script src="C:/Users/Nikhil Thakur/vscode/test_lessons/a (1)/a/a.js"></script> -->
+        <script src="/experiments/validateForm/validateForm.js"></script>
+    </body>

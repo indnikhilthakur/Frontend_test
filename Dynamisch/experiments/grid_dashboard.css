@@ -1,0 +1,64 @@
+#header{
+    background-color: cadetblue;
+    padding: 24px;
+    grid-area: header;
+
+}
+#menu{
+    background-color: darkslategrey;
+    padding: 24px;
+    grid-area: menu;
+
+}
+#main{
+    background-color: aquamarine;
+    padding: 24px;
+    height: 500px;
+    grid-area: main;
+
+}
+#aside{
+    background-color: azure;
+    padding: 24px;
+    grid-area: aside;
+    
+}
+#footer{
+    background-color: mediumpurple;
+    padding: 24px;
+    grid-area: footer;
+
+    
+}
+.grid_container{
+    display:grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main main aside'
+    'footer footer footer footer footer footer';
+}
+
+@media only screen and (max-width:900px){
+    .grid_container{
+        grid-template-areas: 
+        'header header header header header header'
+        'menu main main main main main'
+        'aside aside aside aside aside aside'
+        'footer footer footer footer footer footer';
+    }
+    
+}
+
+@media only screen and (max-width:600px){
+    .grid_container{
+        grid-template-areas: 
+        'header header header header header header'
+        'menu menu menu menu menu menu'
+        'main main main main main main'
+        'aside aside aside aside aside aside'
+        'footer footer footer footer footer footer';
+    }
+    
+}
+
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+    <h1>Registration</h1>
+
+    <div class="col col-lg-4"></div>
+    <div class="col col-lg-4">
+        <form name="formvalidation" id="formValidation" action="">
+            <div class="jumbotron">
+
+                <div class="form-group">
+                    <label for="">Title </label>
+                    <input type="text" class="form-control" name="" id="title">
+                    <span id="titleerr"> </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" name="" id="description">
+                    <span id="descriptionerr"> </span>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Date</label>
+                    <input type="date" class="form-control" name="" id="date">
+                    <span id="dateerr"> </span>
+                </div>
+                <button type="submit" onclick="perform()" id="btn" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="col col-lg-4"></div>
+    </div>
+    </div>
+    </div>
+
+
+    <!--  -->
+
+    <div class='datatable'>
+
+        <table class="table table-striped">
+            <tr>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </tr>
+            <tbody id="formdata">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/experiments/test_Dynamisch/test_code/Diary (3).js"></script>
+</body>
+
+</html>

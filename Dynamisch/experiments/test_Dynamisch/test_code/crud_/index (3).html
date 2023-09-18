@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <!-- CRUD  - 
+    C - Create (Retrive, Store data in local storage, Retrive data from local stroage and Insert data in table)
+    R - Read (reading the data from form)
+    U - Update (Edit or Update)
+    D - Delete -->
+
+    <h2>Form</h2>
+    <fieldset>
+        <legend><h3>Application Form</h3></legend>
+        <form action="#" id="form">
+            <label for="">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter the Name ">
+            <br><br>
+            <label for="">Phone Number:</label>
+            <input type="number" id="phNum" name="phNum" placeholder="Enter the Phone Number ">
+            <br><br>
+            <label for="">Email:</label>
+            <input type="email" id="email" name="email;" placeholder="example1@.gmail.com; ">
+            <br><br>
+
+            <label for="">Job:</label>
+            <input type="text" id="job" name="job" placeholder="Enter the Job">
+            <br><br>
+
+            <label for="">Experience:</label>
+            <input type="number" id="exp" name="exp" placeholder="Enter the Experience">
+            <br><br>
+            <input type="button" name="" id="btn" value="Submit" onclick="Submit()">
+            <input type="reset" name="reset" id="reset" value="Reset">
+            <!-- Reada all data  -->
+            <input type="button" name="read" id="read" value="Read" onclick="save_func()">
+            <input type="button" name="read" id="read" value="DownLoad" onclick="DownLoad()">
+        </form>
+    </fieldset>
+
+
+
+
+    <br>
+    <div id="msg"></div>
+    <br>
+    <fieldset>
+        <legend>
+            <h3>Local Storage</h3>
+        </legend>
+        <table border="2" id="table">
+            <tr>
+                <td class=".col">Name</td>
+                <td class=".col">Phone Number</td>
+                <td class=".col">Email Id</td>
+                <td class=".col">Job</td>
+                <td class=".col">Experience</td>
+                <td class=".col">Status</td>
+            </tr>
+        </table>
+    </fieldset>
+
+
+
+
+
+
+</body>
+<script src="/experiments/test_Dynamisch/test_code/crud_/main.js"></script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/experiments/crud_operations/crud_main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>CRUD</title>
+</head>
+<!-- <body>
+    <div class="main_container">
+        <ul class="list_items" id="list">
+            <li class="item"><input type="text" name="title" id="title" placeholder="title" /required></li>
+            <li class="item"><input type="text" name="discription" id="discription" placeholder="discription" /required></li>
+            <li class="item"><input type="date" name="date" id="date" placeholder="date" /required></li>
+            <li class="item"><button id="btn_submit">submit</button></li>
+            <li class="item"><button id="btn_set">set_local</button></li>
+            <li class="item"><button id="btn_retrive" >records</button></li>
+            <li class="item"><button id="btn_remove" >remove</button></li>
+            <li class="item"><button id="btn_clear" >clear</button></li>
+        </ul>
+    </div>
+    <div id="result_container">
+        <table id="result_table" border="2px solid black">
+            <tr class="tr">
+                <th>Title</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+            <tr class="tr">
+                <td class = row_item id="add_title">title</td>
+                <td class = row_item id=" add_description">description</td>
+                <td class = row_item id="ate">date</td>
+                <td class = row_item><a class = update>update</a></td>
+                <td class = row_item><a class = delete>delete</a></td>
+            </tr>
+        </table>
+    </div>
+    <script src="/experiments/don2.1.js"></script>
+</body> -->
+
+<body>
+    <div class="body_container">
+        <div class="form_container">
+            <form id="form" action="" class="diary_form">
+                <label class="form_label" for="title">Title</label><br/>
+                <input class="form_input" type="text" id="title" name="title" placeholder="Enter Diary Title"><br/>
+                <label class="form_label" for="description">Discription</label><br/>
+                <input class="form_input" type="text" id="discription" name="discription" placeholder="Enter Description"><br/>
+                <label class="form_label" for="Date">Date</label><br/>
+                <input class="form_input" type="date" id="date" name="date"><br/>
+                <input class="form_input" type="button" onclick="submit()" id="btn_submit" value="submit"><br/>
+                <input class="form_input" type="button" name="read" value="read" onclick="funcSave()">
+                <input class="form_input" type="button" name="read" value="download" onclick="downloadCsv()">
+            </form>
+        </div>
+        <div class="alert_msg" id="msg"></div>
+        <div class="records_container">
+            <table border="2" class="records_table" id="table">
+                <tr>
+                    <td class=".col" >title</td>
+                    <td class=".col">description</td>
+                    <td class=".col">date</td>
+                    <td class=".col">update</td>
+                    <td class=".col">delete</td>
+                </tr>
+                <!-- <tbody id="table_body">
+                    <tr class="table_row">
+                        <td class="table_column" id="td_title">title</td>
+                        <td class="table_column" id="td_description">description</td>
+                        <td class="table_date" id="td_date">date</td>
+                        <td class="update" id="td_delete"><a href="">update</a></td>
+                        <td class="delete" id="td_delete"><a href="">delete</a></td>
+                    </tr>
+                </tbody> -->
+            </table>
+        </div>
+    </div>
+    <script src="/experiments/crud_operations/crud_main.js"></script>
+</body>
+</html>

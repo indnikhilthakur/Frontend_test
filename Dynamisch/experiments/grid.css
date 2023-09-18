@@ -1,0 +1,40 @@
+.grid_item{
+    border: 2px solid black;
+    height:300px;
+    width: 200px;
+    background-color: cornflowerblue;
+    
+    
+}
+.grid_container{
+    display:grid;
+    grid-template-columns: auto auto auto auto ;
+    row-gap: 16px;
+    column-gap: 16px;
+    justify-content: space-evenly;
+    
+    
+    
+    
+}
+@media only screen and (max-width:900px){
+    .grid_container{
+        grid-template-columns: auto auto auto;
+       
+    }
+}
+
+@media only screen and (max-width:600px){
+    .grid_container{
+        grid-template-columns: auto auto;
+        
+  
+    }
+}
+@media only screen and (max-width:500px){
+    .grid_container{
+        grid-template-columns: auto;
+        
+    
+    }
+}

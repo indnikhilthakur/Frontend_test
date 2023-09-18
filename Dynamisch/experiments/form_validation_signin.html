@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=No">
+        <title>Nikhil Thakur web</title>
+        <link href="/css/navbar.css" rel="stylesheet" type="text/css">
+        <link href="/experiments/experiments.css" rel="stylesheet" type="text/css">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <cript src="form_validation.js" type="text/javascript"></script>
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        
+    </style>
+    <script>
+        function validate_form(){
+            var name = document.form.name.value;
+            var password = document.form.password.value;
+            if(name == null || name == "")
+            {
+                alert("name should not be blank");
+                return false;
+            }
+            else if(password < 8)
+            { 
+                alert("password should be at least 8 charecters");
+                return false;
+            }
+            else{
+                return true;
+            }
+            
+
+        }
+    </script>
+    <body>
+        <header>
+            <!--a><img src="https://drive.google.com/uc?export=view&id=1fZDlHHxEuP_COokXs7eeRUZ65yDksV8l|1vremNfed4amLtIqIX3tP61AGnN79W9f1|1K9qDNKi-kgOcbYpWc8Kzh22C9CEOi1zY|1CGTyA-w2Ff_shmV7kkuR9vU8tG3L0fEY|19X101TlGKgFH2vXc5pIexB4nsK4ecmMx" width="100%" height="300px"></a-->
+            <div>
+                <h1>Nikhil Thakur</h1>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-lg navbar-lite bg-blue">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="https://drive.google.com/uc?export=view&id=1vremNfed4amLtIqIX3tP61AGnN79W9f1" width="30" height="30" alt="">
+                          </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Tech Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">About</a>
+                                </li>
+                            </ul>
+        
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="navbar-brand" href="#">
+                                        <img src="/experiments/default profile.png" width="30" height="30" alt="">
+                                      </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link btn btn-blue rounded-2" href="#">sign-In</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            
+                
+            
+
+                
+        </header>
+        <br/>
+        <hr/>
+        <main>
+           <section class="sign_in">
+                <div>
+                <h2 style="margin: 10px;">Login</h2>
+                </div>
+                <div  >
+                <form name="form" id="form" action="/experiments/experiments_bootstrap.html" method="post" onsubmit="return validate_form" style="margin: 10px; display: inline-block; transform: transition(200px);">
+                    
+                    
+                    Username:<br>
+                    <input type="text" name="username" id="username">
+                    <br>
+                    Password:<br>
+                    <input type="password" name="password" id="password">
+                    <br>
+                    <input type="submit" value="submit">
+                    <br>
+                    <hr>
+                    <input type="button" onclick="window.location.href='/Sign-up_html.html'" value="sign-up">
+                    
+                    
+                </form>
+                </div>
+            </section>
+        </main>
+        <br/>
+        <br/>
+        <hr/>
+        <footer>
+            <section>
+                <table cellspacing="20px" rowspacing="20px">
+                    <tr>
+                        <th colspan="3" style="text-align: left;" >Contact Me:</th>
+                        <th colspan="3" style="text-align: left;">Profiles:</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><a>
+                            <dl>
+                                <dt><abbr title="nikhil.nt58@gmail.com">Email</abbr></dt>
+                                <dd><a href="mailto:nikhil.nt58@gmail.com">nikhil.nt58@gmail.com</a></dd>
+                            </dl>
+                        </a></td>
+                        <td><a>Linkedin</a></td>
+                        <td><a>Github</a></td>
+                        <td><a>Kaggle</a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><a>
+                            <dl>
+                                <dt><abbr title="9860528221">Mobile No.</abbr></dt>
+                                <dd><a href="tel:9860528221">9860528221</a></dd>
+                            </dl>
+                        </a></td>
+                        <td colspan="3"></td>
+                    </tr>
+                </table>
+            </section>
+            <!--div>
+                <h2>Contact Me:</h2>
+                <address>
+                    <a>
+                        <dl>
+                            <dt><abbr title="nikhil.nt58@gmail.com">Email</abbr></dt>
+                            <dd><a href="mailto:nikhil.nt58@gmail.com">nikhil.nt58@gmail.com</a></dd>
+                        </dl>
+                    </a>
+                    <a>
+                        <dl>
+                            <dt><abbr title="9860528221">Mobile No.</abbr></dt>
+                            <dd><a href="tel:9860528221">9860528221</a></dd>
+                        </dl>
+                    </a>
+                </address>
+            </div-->
+            <!--div>
+                <h2>
+                    Profiles:
+                </h2>
+                <a>Linkedin</a>
+                <a>Github</a>
+                <a>Kaggle</a>
+            </div-->
+            
+        </footer>
+    </body>
+</html>

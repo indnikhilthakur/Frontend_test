@@ -1,0 +1,141 @@
+/*:root{
+    font-size: 10px;
+}*/
+#heading_spec{
+    font-size: 30px ;
+    padding: 10px;
+    color: olivedrab;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration:none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(16, 46, 101);
+    text-transform: capitalize;
+}
+
+h2{
+    font-size:30px;
+    padding: 10px;
+    color:darkcyan
+}
+
+body{
+    margin:0px;
+    background-color: #f2f6ff;
+}
+
+#heading_img_details{
+    color:midnightblue !important;
+    display: inline-block;
+    
+}
+
+#heading_detail{
+    font-size: 20px;
+    text-align: left;
+    word-spacing: 4px;
+    line-height: 2em;
+    font-weight: 200;
+    padding-top: 80px;
+    margin-bottom: 90px;
+ 
+    
+}
+
+p span{
+    letter-spacing: 1px;
+    color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: darkgreen;
+}
+
+img[src]{
+    color:violet
+}
+
+.skills li{
+    color:hotpink
+}
+
+li .about{
+    color:aqua
+}
+
+/*div + div + p{
+    color: greenyellow;
+}*/
+
+
+section{
+    display: block;
+    border:4px solid black;
+    margin:10px;
+}
+
+
+
+#about{
+    border:4rem solid forestgreen;
+    border-radius: 40px 40px 5px 40px;
+    display: flex;
+   
+
+}
+
+
+#image{
+    
+    display:inline-block;
+    border: 10px solid orange;
+    padding:0px;
+    margin: 0px;
+
+}
+
+#image img[src]{
+    border:10px solid violet;
+    border-radius: 1em;
+}
+
+#content{
+    display:block;
+    border: 10px solid blue;
+    /*to add border need to add border style*/
+    /*border: 10px 12px 10px;
+    border-style: solid;
+    border-collapse: collapse;
+    border-top-color: darkgray;
+    border-top-width: 20px;
+    border-right-color:teal ;
+    border-bottom-color: steelblue;
+    border-left-color: darkslategrey;
+    border-left-style: dotted;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;*/
+    /*width: 80%;*/
+    /*min-width: 50%;*/
+    max-width: 90%;
+    min-height: fit-content;
+    position: relative;
+    
+}
+.container-fluid{
+    border: 4px solid black;
+}
+.container{
+    padding:100px
+}
+.about{
+    box-sizing: border-box;
+}

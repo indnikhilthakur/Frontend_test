@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--  -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <!-- <link type="text/css" rel="stylesheet" href="experiments/crud_operations/crud1.css"> -->
+</head>
+
+<body>
+
+    <h2>Form</h2>
+    <!-- <fieldset> -->
+        <!-- <legend><h3>Application Form</h3></legend> -->
+        <div class = form_conatainer>
+            <form action="#" id="form">
+                <label for="">Title:</label>
+                <input type="text" id="name" name="name" placeholder="Enter the title ">
+                <br><br>
+                <label for="">Description:</label>
+                <input type="text" id="phNum" name="phNum" placeholder="Enter description">
+                <br><br>
+                <label for="">date:</label>
+                <input type="date" id="email" name="email;" placeholder="enter date">
+                <br><br>
+
+                
+                <input type="button" name="" id="btn" value="Submit" onclick="Submit()">
+                <input type="reset" name="reset" id="reset" value="Reset">
+                <!-- Reada all data  -->
+                <input type="button" name="read" id="read" value="Read" onclick="save_func()">
+                <input type="button" name="read" id="read" value="DownLoad" onclick="DownLoad()">
+            </form>
+        </div>
+    <!-- </fieldset> -->
+
+
+
+
+    <br>
+    <div id="msg"></div>
+    <br>
+    <!-- <fieldset> -->
+        <!-- <legend>
+            <h3>Local Storage</h3>
+        </legend> -->
+        <table border="2" id="table">
+            <tr>
+                <td class=".col">Title</td>
+                <td class=".col">Description</td>
+                <td class=".col">Date</td>
+                
+                <!-- <td class=".col">Status</td> -->
+            </tr>
+        </table>
+    <!-- </fieldset> -->
+
+
+
+
+
+
+</body>
+<script src="/experiments/crud_operations/crud1.js"></script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>form</title>
+        <script type="text/javascript" src="/experiments/Form_Events/test_form/New folder/main0.js"></script>
+    </head>
+    <!--  -->
+    <body>
+        <div class="container_main" id="conatainer_form">
+            <form class="form_signIn" id="form_login">
+                <h1>Login</h1>
+                <label for="user_name" class="form_items">Username</label>
+                <input type="text" id="user_name" class="form_control" placeholder="Full_name" required autofocus/><br/>
+                <label for="password" class="form_items">Password</label>
+                <input type="password" id="password" class="form_control" placeholder="password" required><br/>
+                <button class="form_btn" type="submit">submit</button>
+
+            </form>
+            <!--  -->
+            <button class="buttons" id="retive_btn">retive records</button>
+            <button class="buttons" id="remove_btn">remove records</button>
+            <button class="buttons" id="clear_btn">clear records</button>
+        </div>
+        <div class="container_result" id="container_table">
+            <table class="table_result" style="border: 4px solid black;column-width: 8px;">
+                <tr id="row1">
+                    <td>USERNAME: </td>
+                    <td id="name">name</td>
+                </tr>
+                <tr id="row2">
+                    <td>PASSWORD: </td>
+                    <td id="pass">pass</td>
+                </tr>
+            </table>
+
+        </div>
+        <!-- <div class="conatiner_element" id="container">
+            <form class="test_form">
+                <input type="text" id="name" placeholder="name">
+                <button type="submit" id="btn_test" value="submit">submit</button>
+
+            </form>
+            <button id="btn_rec">add</button>
+            <ul id ="records">
+                <li id="item1">item1</li>
+                <li id="item2">item2</li>
+            </ul>
+
+        </div> -->
+        <!-- <script src="/experiments/Form_Events/test_form/main1.js"></script> -->
+
+    </body>
+</html>

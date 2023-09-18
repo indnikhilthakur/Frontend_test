@@ -1,0 +1,125 @@
+
+body{
+    position: relative;
+    box-sizing: content-box;
+    background-image: url(/ai-ml\ copy.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.anchor{
+    position:fixed;
+    left: 50%;
+    top: 50%;
+
+
+}
+.centerCount{
+    /* position: absolute; */
+    /* left:50%;
+    top:50% */
+}
+
+#main-container{
+    width: 400px;
+    border: 2px solid red;
+    padding: 12px;
+    display: flex
+}
+
+.inner{
+    border: 5px solid green;
+    margin: 0 12px;
+    width: 200px;
+    height: 200px;
+}
+.main-container .inner h2{
+    color:indigo;
+    font-size: 40px;
+ }
+
+.addClass {
+    background-color: red;
+    border: 5px solid pink;
+    color: white;
+}
+
+.container{
+    border: 2px solid black;
+    width: 800px;
+    height: 500px;
+    position: relative;
+    left: 200px;
+    box-sizing: border-box;
+    /* background-image: url(/ai-ml\ copy.png); */
+    background-position: center;
+}
+.container.resize{
+    border: 2px solid black;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    left: opx; 
+    box-sizing: border-box;
+    /* background-image: url(/ai-ml\ copy.png); */
+    background-position: center center;
+    background-color: blue;
+    z-index: -20;
+    
+}
+#bgImg{
+    width:800px;
+    height:500px;
+    z-index: -10;
+    position:absolute;
+    opacity: 20;
+}
+#bgImg1{
+    width:800px;
+    height:500px;
+    z-index: -10;
+    position:absolute;
+    opacity: 100px;
+}
+.container .text{
+    font-size: 20px;
+    color: darkseagreen;
+    font-weight: 200;
+}
+#counter{
+    /* position: fixed; */
+    /* left: 50%;
+    top: 50%; */
+    /* transform:  translate(400px, 400px); */
+    
+} 
+.shadow{
+    font-size: 48px;
+}
+.shadowOne{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: blue;
+
+}
+.shadowTwo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: cornflowerblue;
+    
+}
+
+#img{
+    /* box-sizing: border-box;
+    width: auto;
+    height:min-content;
+     background-attachment: fixed;
+     background-position: center center;
+    background-size: contain;
+    position: relative;
+    height:395px;
+    width: 595px; */
+}
+

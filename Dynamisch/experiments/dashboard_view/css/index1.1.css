@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    border: 2px solid black;
+    background-color: azure;
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: row; */
+    height:100%;
+    width: 100%;
+    position: fixed;
+    
+}
+.sideBar{
+    background-color:darkslateblue;
+    
+    height: 100%;
+    width: 280px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition:all 500ms ease;
+    
+}
+
+.sideBar.close{
+    width: 78px;
+}
+
+.sideBar .logoDetails{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+
+}
+.sideBar .logoDetails i{
+    font-size: 30px;
+    color: snow;
+    /* background-color: aqua; */
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    animation-duration: 5000ms;
+   
+    /* animation:time;*/
+    /* animation-iteration-count: 1; 
+    animation-timing-function: ease-in; */
+}
+/* @keyframes time{
+    0%{
+        animation-delay: 1000ms;
+    }
+    100%{
+        animation-delay: 1000ms;
+    }
+} */
+.sideBar .logoDetails span{
+    font-size: 30px;
+    color: snow;
+    transition: 300ms ease;
+    transition-delay: 100ms;
+
+}
+.sideBar.close .logoDetails span{
+    /*display: none;*/
+    transition-delay: 0ms;
+    opacity: 0;
+    pointer-events: none;
+}
+.sideBar .navLinks{
+    /* position: relative;
+    list-style: none; */
+    background: grey;
+    padding: 30px 0px 150px 0px;
+    height: 100%;
+    padding-top: 30px;
+    overflow: visible;
+}
+.sideBar .navLinks::-webkit-scrollbar{
+    display: none;
+}
+.sideBar .navLinks li{
+    position: relative;
+    list-style: none;
+    transition: all 400ms ease;
+}
+.sideBar .navLinks li:hover{
+    background-color: cornflowerblue;
+}
+.sideBar .navLinks li .iconLinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sideBar.close .navLinks li .iconLinks{
+    display: block;
+}
+.sideBar .navLinks li i{
+    height: 50px;
+    min-width: 78px;
+    text-align: center;
+    line-height: 50px;
+    color:aliceblue;
+    transition: all 400ms ease;
+    /* cursor: pointer; */
+}
+.sideBar .navLinks li.showMenu i.arrow{
+    transform: rotate(-180deg);
+}
+.sideBar.close .navLinks i.arrow{
+    display: none;
+}
+.sideBar .navLinks li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.sideBar .navLinks li a .linkName{
+    font-size: 18px;
+    font-weight: 400;
+    color: aliceblue;
+    
+
+}
+.sideBar.close .navLinks li a .linkName{
+    opacity: 0;
+    pointer-events: none;
+}
+.sideBar .navLinks li .subMenu{
+    padding: 5px 5px 14px 80px;
+    margin: 0px;
+    background-color: cornflowerblue;
+    
+
+    display: none;
+}
+.sideBar .navLinks li.showMenu .subMenu{
+    display: block;
+}
+.sideBar .navLinks li .subMenu a{
+    color: aliceblue;
+    font-size: 14px;
+    padding: 5px 0px;
+    white-space: nowrap;
+    opacity: 0.6;
+    transition: all 300ms ease;
+}
+
+.sideBar .navLinks li .subMenu a:hover{
+    opacity: 1;
+}
+
+.sideBar.close .navLinks li .subMenu{
+    position: absolute;
+    left: 100%;
+    top:-10px;
+    margin-top: 0px;
+    padding: 10px 20px;
+    /* border: 4px solid black; */
+    border-radius: 0px 5px 5px 0px;
+    /* transition:all 300ms ease; */
+    transition: 0s;
+    opacity: 0;
+    display: block;
+    pointer-events: none;
+
+
+
+}
+.sideBar.close .navLinks li:hover .subMenu{
+    top: 0px;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 300ms ease;
+
+}
+.sideBar .navLinks li .subMenu .linkName{
+    display: none;
+}
+
+.sideBar.close .navLinks li .subMenu .linkName{
+    font-size: 18px;
+    opacity: 1;
+    display: block;
+}
+.sideBar .navLinks li .subMenu.blank{
+    opacity: 0;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+.sideBar .navLinks li:hover .subMenu.blank{
+    top: 50%;
+    transition: translateY(-50%);
+
+}
+
+
+
+/*------------------------------------*/
+.sideBar .profileDetails{
+    position: fixed;
+    bottom: 0;
+    /* width: 280px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 300ms ease;
+    /* margin-bottom: 16px; */
+    /* background: #1b1d31; */
+    padding: opx;
+    
+    /* background: aliceblue;
+    padding: 6px 0px; */
+}
+/* .sidebar.close .profileDetails{
+    display:none
+} */
+.sideBar .profileDetails .profileContent{
+    display: flex;
+    align-items: center;
+}
+
+.sideBar .profileDetails img{
+    height: 52px;
+    width: 52px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0px 14px 0px 12px;
+    /* background: aliceblue; */
+    padding: 2px;
+}
+.sideBar .profileDetails .profileNameJob{
+    margin-right: 10px;
+}
+.sideBar .profileDetails .profileNameJob i{
+    color: aliceblue;
+}
+.sideBar.close .profileDetails .profileNameJob,.sideBar.close .profileDetails .bx-log-out-circle{
+    /*display: none;*/
+    opacity: 0;
+    transition-delay: 0ms;
+}
+.sideBar .profileDetails .profileName, .sideBar .profileDetails .profileNameJob{
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 500;
+    white-space: nowrap
+    ;
+}
+.sideBar .profileDetails .profileJob{
+    font-size: 12px;
+}
+
+/* ---------------------------------------------- */
+
+.homeSection{
+    position: relative;
+    background-color: midnightblue;
+    height: 100vh;
+    left: 280px;
+    width:calc(100% - 280px);
+    transition: all 500ms ease;
+    overflow:  scroll;
+}
+
+
+.sideBar.close ~ .homeSection{
+    background-color: blueviolet;
+    left: 78px;
+    width: calc(100% - 78px);
+}
+
+.homeSection .homeContent{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 2px olid black;
+    background-color: slategray;
+    
+
+}
+.homeSection .homeContent .bx-menu,
+.homeSection .homeContent .text{
+    color: aliceblue;
+    font-size: 26px;
+
+    
+}
+.homeSection .homeContent .bx-menu{
+    margin: 0px 15px;
+    
+}
+.homeSection .homeContent .text{
+    font-size: 25px;
+    font-weight: 500;
+}
+.homeSection .homeContent .signIn,.homeSection .homeContent .bell,.homeSection .homeContent .hamBergerM{
+    float: right;
+    /* border: 2px solid black; */
+    padding: 8px;
+    margin: 8px;
+}
+
+.homeSection .homeContent .signIn{
+    margin-left:calc(100% - 350px);
+    color: snow;
+}
+.homeSection .flexboxContainer{
+    display: flex;
+    flex-direction: column;
+
+}
+.homeSection .flexboxContainer .flexboxSubContainer{
+    border: 2px solid black;
+    /* height: 400px; */
+    background-color: cadetblue;
+}
+
+.homeSection .flexboxContainer .flexboxSubContainer .flexWidgets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: lightpink;
+    height: 300px;
+    
+}
+@media screen and (max-width:600px){
+    .homeSection .flexboxContainer .flexboxSubContainer .flexWidgets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightpink;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.homeSection .flexboxContainer .flexboxSubContainer .flexWidgets .fWig{
+    background-color: paleturquoise;
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+}
+@media screen and (max-width:968px){
+    .homeSection .flexboxContainer .flexboxSubContainer .flexWidgets{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightpink;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.homeSection .flexboxContainer .flexboxSubContainer .flexWidgets .fWig{
+    background-color: paleturquoise;
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+}
+
+.homeSection .flexboxContainer .flexboxSubContainer .flexWidgets .fWig{
+    background-color: paleturquoise;
+    height: 200px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+}
+.homeSection .flexboxContainer .flexboxSubContainer .flexWidgets .fWig p{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}    
+.homeSection .flexboxContainer .flexboxSubContainer .flexGraphs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: coral;
+    height: 640px;
+
+}
+.homeSection .flexboxContainer .flexboxSubContainer .flexGraphs .graph{
+    background-color: azure;
+    height: 530px;
+    width: 500px;
+    border-radius: 8px;
+    position: relative;
+}
+.homeSection .flexboxContainer .flexboxSubContainer .flexGraphs .graph img{
+    position: absolute;
+    /* left: -20px; */
+    width:500px;
+    height: 300px;
+    margin-top: 100px;
+    
+
+}
+/* .homeSection .flexboxContainer .flexboxSubContainer .flexGraphs .graph #graph2{
+    background: url(/dashboard_view/donutchart.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+.homeSection .flexboxContainer .flexboxSubContainer .flexCards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: midnightblue;
+    height: 500px;
+
+}  
+.homeSection .flexboxContainer .flexboxSubContainer .footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: dimgrey;
+    border: 2px solid black;
+    
+}
+/* .homeSection .homeContent .navMenu{
+    float: right;
+}
+.homeSection .homeContent .navMenu li a{
+    display: block;
+    border: 2px solid black;
+    padding: 4px;
+    background-color: aquamarine;
+
+} */
+.mainContainer{
+    border: 2px solid black;
+    background-color: lightpink;
+    
+}
+/* ----------------------------------------------------------------- */
+.homeSection .flexboxContainer .flexboxSubContainer .formLogin{
+    margin: 200px;
+}

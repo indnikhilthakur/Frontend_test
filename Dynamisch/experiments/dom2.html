@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/experiments/dom2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>DOM</title>
+</head>
+<body>
+    <section id="sidebar" class="sidebar" class="show">
+        <header class="side_header">
+
+            
+        </header>
+        <div class ="side_menu">
+            <nav class="navigation">
+                <ul class="nav_iteems">
+                    <li class="item"><a class="menu_link">home</a></li>
+                    <li class="item"><a class="menu_link">setting</a></li>
+                    <li class="item"><a class="menu_link">about</a></li>
+                    <li class="item"><a class="menu_link">contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </section>
+    <section class="main_body">
+        <div class="main_menu">
+            <ul class="menu_items">
+                <li id = "hamberger_menu" class="m_item"><a class="m_link"><i class='bx bx-menu'></i></a></li>
+                <li class="m_item"><p id="p_text">style operations</p></li>
+                <li class="m_item"><a class="m_link"><button id="btn_style_add" style="margin-right:30px">style +</button></a></li>
+                <li class="m_item"><a class="m_link"><button id="btn_style_minus" style="margin-right:20px">style -</button></a></li>
+                <li class="m_item"><a class="m_link"><button id="btn_Add_Element" style="margin-right:20px">Add Element</button></a></li>
+                <li class="m_item"><a class="m_link"><button id="btn_update_Element" style="margin-right:20px">update Element</button></a></li>
+                <li class="m_item"><a class="m_link"><button id="btn_remove_Element" style="margin-right:20px">remove Element</button></a></li>
+                <li class="m_item"><a class="m_link"><input type="text" id="input_name" placeholder="list_item"></a></li><!--placeholder="name"-->
+                <li class="m_item"><a class="m_link"><input type="password" id="input_password" placeholder="password"></a></li>
+                
+                <li class="m_item" id="result">
+                    <ul class="result_elements" id="add_elements">
+                        <li class="r_item" id="first_item"><a class="r_link">item1</a></li>
+                        <li class="r_item"><a class="r_link">item2</a></li>
+                        <!-- <li class="r_item"><a class="r_link"></a></li>
+                        <li class="r_item"><a class="r_link"></a></li> --->
+
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </section>
+    <section class="middle">
+        <div class="drumkit">
+            <div class="key"><button class="d_text" id="d_h">H</button></div>
+            <div class="key"><button class="d_text" id="d_j">J</button></div>
+            <div class="key"><button class="d_text" id="d_k">K</button></div>
+            <div class="key"><button class="d_text" id="d_l">L</button></div>
+        </div>
+    </section>
+    <section class="middle2">
+        <div class="mouse">
+            <div class="key1"><a><button class="m_text" id="btn_l">click</button></a></div>
+            <!-- <div class="key1"><a><button class="m_text" id="btn_r"></button></a></div>
+            <div class="key1"><a><button class="m_text" id="btn"></button></a></div>
+            <div class="key1"><a><button class="m_text" id="btn"></button></a></div> -->
+
+        </div>
+        <div class="mouse_over" id="mouse_o">
+            <h3>mouse over event</h3>
+            <p>0</p>
+            <!-- <div class="div_over" id="text">mouse over event</div>
+            <div class="div_over" id="count">0</div> -->
+        </div>
+        <div class="mouse_enter" id="mouse_e">
+            <h3>mouse enter event</h3>
+            <p>0</p>
+            <!-- <div class="div_over" id="text">mouse over event</div>
+            <div class="div_over" id="count">0</div> -->
+        </div>
+        <div class="mouse_move" id="mouse_m">
+            <h3>mouse click event</h3>
+            <p>0</p>
+            <!-- <div class="div_over" id="text">mouse over event</div>
+            <div class="div_over" id="count">0</div> -->
+        </div>
+    </section>
+    
+    
+
+    <script src="/experiments/dom2.js"></script>
+</body>
+</html>

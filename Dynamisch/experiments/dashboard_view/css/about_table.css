@@ -1,0 +1,107 @@
+
+/*tables*/
+.table table{
+    border-collapse: collapse;
+    /*border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-spacing: 4px;*/
+    /*width:50*/
+    border:2px solid olivedrab;
+    border-style: solid;
+    border-width:1px;
+    background-image: url(/ai-ml\ copy.png);
+    background-position: center center;
+    background-size: contain;
+    
+    
+    /*filter:blur(px)*/
+}
+
+/*.t_img{
+    background-image: url(/ai-ml\ copy.png);
+    position:relative;
+    height: 600px;
+    width:600px;
+    filter: blur(2px);
+}*/
+
+/*.t_content{
+    
+    color: black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}*/
+
+
+.table th, .table td{
+    padding:10px;
+    text-align: center;
+}
+
+.table thead th{
+    background-color: chocolate;
+    height: 15px;
+    color:azure;
+    border-bottom: 2px solid blueviolet;
+    border-top: 2px solid blueviolet;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+    letter-spacing: 2px;
+}
+
+.table tbody td{
+    /*background-color: aquamarine;*/
+    height: 15px;
+    color:darkslategrey;
+    border-bottom: 2px solid blue;
+    border-top: 2px solid blue;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+    letter-spacing: 2px;
+}
+
+.table tfoot td{
+    color:darkmagenta
+}
+
+.table tbody td:first-child{
+    border-right:4px solid gold;
+}
+
+.table tbody td:nth-child(2){
+    border-right:4px solid black;
+}
+
+.table tbody td:nth-child(5){
+    border-right:4px solid cornsilk;
+}
+
+.table tbody tr:nth-child(odd):hover{
+    background-color: darkblue;
+}
+
+.table tbody tr:nth-child(even){
+    background: rgba(0, 100, 0, 0.556);
+}
+
+/*.table thead th{
+    padding: 15px;
+    text-align: center;
+    background-color: blueviolet;
+    height: 20px;
+    color:white;
+    border-bottom:3px solid rgb(110, 13, 13);
+    border-right:3px solid rgb(110, 13, 13);
+    border-left:3px solid rgb(110, 13, 13);
+    border-top:3px solid rgb(110, 13, 13);
+    letter-spacing: 2px;
+    background:linear-gradient(rgb(110, 13, 13),rgb(44, 13, 110))
+
+}*/
+.homeSection .flexboxContainer .flexboxSubContainer .table{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin: 100px;
+}

@@ -1,0 +1,48 @@
+#main-container{
+    width: 400px;
+    border: 2px solid red;
+    padding: 12px;
+    display: flex
+}
+
+.inner{
+    border: 5px solid green;
+    margin: 0 12px;
+    width: 200px;
+    height: 200px;
+}
+.main-container .inner h2{
+    color:indigo;
+    font-size: 40px;
+ }
+
+.addClass {
+    background-color: red;
+    border: 5px solid pink;
+    color: white;
+}
+
+.container{
+    border: 2px solid black;
+    width:600px;
+    height: 400px;
+    position: relative;
+    left:200px;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(/ai-ml\ copy.png);
+    background-position: center;
+}
+
+#img{
+    box-sizing: border-box;
+    width: auto;
+    height:min-content;
+    /* background-attachment: fixed;
+    background-position: center center; */
+    background-size: contain;
+    position: relative;
+    height:395px;
+    width: 595px;
+}
+

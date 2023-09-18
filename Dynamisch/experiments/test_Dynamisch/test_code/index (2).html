@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>curd</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>
+    <h2>FORM </h2>
+</legend>
+    <form id ="form">
+        <input type="text" id ="studentname" placeholder=" Title"><br><br>
+        <input type="text" id ="rollno" placeholder="Description"><br><br>
+        <input type="date" id ="subject" placeholder="Date"><br><br>
+        <input type="time" id ="marks"place placeholder="Time"><br><br>
+        <input type="button"value="Submit" id="btn" onclick="Submit()">
+        <input type="reset"vaue="reset">
+        
+        <!-- <input type="button"value="Read" id="btn" onclick=" GetCellValues()"> -->
+        <input type="button"value="Read" id="btn" onclick="save_func()">
+    
+    </form>
+   
+</fieldset>
+<br>
+<div id="msg"></div> <br><br>
+<fieldset>
+    <legend>
+<h2>Data from local storage</h2>
+    </legend>
+    <table border="2" id="table">
+        <tr>
+            <td class=".col">Title</td>
+            <td class=".col">Description</td>
+            <td class=".col">Date</td>
+            <td class=".col">Time</td>
+            <td class=".col">Action</td>
+        </tr>
+        
+    </table>
+</fieldset>
+</body>
+
+<script src="script.js"></script>
+</html>

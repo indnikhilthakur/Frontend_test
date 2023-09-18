@@ -1,0 +1,184 @@
+/* dom2 sidebar */
+*{
+    font-family:'Poppins', sans-serif;
+}
+body{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color: cadetblue;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+}
+section{
+
+}
+body .sidebar.show{
+    position: fixed;
+    /* display: inline; */
+    /* box-sizing: border-box; */
+    height: 100%;
+    width:280px;
+    background-color: azure;
+    margin: 0px;
+    padding: 0px;
+    justify-content: flex-start;
+    transition: transform 1000ms ease-in;
+    /* transform: translateX(280px); */
+}
+body .sidebar.hide{
+    position: fixed;
+    /* display: inline; */
+    /* box-sizing: border-box; */
+    height: 100%;
+    width: 280px;
+    background-color: azure;
+    margin: 0px;
+    padding: 0px;
+    justify-content: flex-start;
+    transform: translateX(-280px);
+    transition: transform 1000ms ease-in;
+}
+
+body .main_body{
+    position: relative;
+    display: inline-block;
+    justify-content: flex-end;
+    left: 290px;
+    font-size: 40px;
+
+
+}
+body .main_body .main_menu .menu_items{
+    /* display: block; */
+    flex-direction: row;
+    list-style: none;
+}
+body .main_body .main_menu .menu_items .item{
+    /* display: inline-block; */
+    margin: 8px;
+    border: 2px solid blue;
+    
+    
+    
+}
+body .main_body .main_menu .menu_items .item i{
+    font-size: 40px;
+    font-size: 100px;
+}
+
+#btn_style_add{
+    margin-top: 8px;
+}
+
+#p_text{
+    /* font-size:48px; */
+    color:pink
+}
+
+/* li{
+    height: 8px;
+    width: 10px;
+    border:4px solid black
+} */
+
+body .main_body .main_menu .menu_items .result_elements li{  
+    /* .r_item .r_link */
+    background-color: lightblue;
+    display: block;
+    height: auto;
+    width: auto;
+    border:4px solid black;
+    color: navy;
+    margin: 2px;
+}
+
+/* ------------------------drumkit----------------------------------- */
+body .middle .drumkit .key{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    
+}
+body .middle .drumkit .key .d_text{
+    color: azure;
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+   
+}
+body .middle2{
+    box-sizing: border-box;
+
+}
+body .middle2 .mouse .key1{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    
+}
+body .middle .drumkit .key{
+    color: azure;
+    height: 40px;
+    width: 40px;
+    background-color: pink;
+   
+}
+
+body .middle2 .mouse_over{
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+
+
+}
+body .middle2 .mouse_over h3, body .middle2 .mouse_over p{
+    border: 8px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 16px;   
+}
+
+
+body .middle2 .mouse_enter{
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+
+
+}
+body .middle2 .mouse_enter h3, body .middle2 .mouse_enter p{
+    border: 8px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 16px;   
+}
+
+body .middle2 .mouse_move{
+    background-color: cornflowerblue;
+    height: auto;
+    width: auto;
+
+
+}
+body .middle2 .mouse_move h3, body .middle2 .mouse_move p{
+    border: 8px solid black;
+    width: 150px;
+    height: 50px;
+    margin: 16px;   
+}
+
+
+
+.tr{
+    background-color: cornflowerblue;
+    height: 100px;
+    width: 1000px;
+}

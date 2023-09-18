@@ -1,0 +1,45 @@
+.article_wrapper{
+    padding: 4% 16%;
+}
+article{
+    padding-bottom: 48px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.4;
+    margin: 16px;
+    letter-spacing: 2px;
+    margin: 20px;
+    
+}
+.article_img{
+    margin: 50px;
+}
+#img1{
+    width: 400px;
+    height: 400px;
+    float: left;
+    
+}
+#img2{
+    width: 400px;
+    height: 400px;
+    float: right;
+}
+
+#btn {
+    box-sizing: border-box;
+    width: 200px;
+    height: 80px;
+    background-color: darkblue;
+    border: 10px solid ghostwhite;
+    border-radius: 20px;
+    color:ghostwhite;
+    font-size: 16px;
+    text-decoration: none;
+
+}
+#btn:hover{
+    background-color:lightblue ;
+    color: honeydew;
+    font-size: 16px;
+}

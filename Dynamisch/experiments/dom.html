@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/experiments/dom.css">
+    <title>DOM</title>
+</head>
+<body>
+    <a class="anchor">
+        <div class="centerCount">
+            <h1 id="counter">10</h1>
+        </div>
+    </a>
+    
+    
+    
+    <!-- <img id="bgImg" src="/ai-ml copy.png" alt="img"> -->
+    <div id="main-container">
+        <div class="inner" id="inner-one">
+            <p>Dom Manipulation</p>
+        </div>
+        <div class="inner" id="inner-two">
+            <p>Document object model</p>
+        </div>
+        <div class="inner" id = "inner-box" >
+            <p>inner-box</p>
+            <h2>This is test for query selector</h2>
+
+        </div>
+    </div>
+    <div class="container" id="body">
+        <img id="bgImg" src="/ai-ml copy.png" alt="img">
+        <h1 id="count">10</h1><br/>
+        <p class = "text">
+            original html document
+        </p>
+        
+    </div>
+
+    <div class="container resize" id="body">
+        <img id="bgImg1" src="/ai-ml copy.png" alt="img">
+        <h1 id="counter">10</h1><br/>
+        <p class = "text">
+            countdown 2
+        </p>
+        
+    </div>
+    <div class="shadow">
+        <p id="heading" class="shadowOne">add/remove class</p>
+        <button id="btnShadow">click</button>
+    </div>
+    
+
+   
+    <button id="btn-one">Add BG</button>
+    <button id="btn-two">Remove BG</button>
+    <button id="btn-three">Toggle BG</button>
+
+    <script src="/experiments/dom.js"></script>
+</body>
+</html>
